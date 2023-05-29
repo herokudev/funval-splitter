@@ -31,7 +31,7 @@ Below, we showcase screenshots of the app.
 
 ## Live Demo
 
-Live demo for this project can be found if you [click here](https://spaceships-enio-emma-mario.netlify.app).
+Live demo for this project can be found if you [click here](https://herokudev.github.io/funval-splitter/).
 
 ## Getting Started
 
