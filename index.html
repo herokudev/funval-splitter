@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700"
+      rel="stylesheet"
+    />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Tip calculator app</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="logo">
+        <img src="./images/logo.svg" alt="logo" />
+      </div>
+      <section class="data">
+        <form class="input">
+          <div class="box01">
+            <span class="description01">Bill</span>
+            <div id="inputData" class="input-data">
+              <img src="./images/icon-dollar.svg" alt="dolar-sign" />
+              <input
+                type="text"
+                name="inputAmount"
+                id="inputAmount"
+                placeholder="0"
+              />
+            </div>
+          </div>
+          <div class="box01">
+            <span class="description01">Select Tip%</span>
+            <div class="tips-options">
+              <div>
+                <button id="btn5p" type="button" class="tips-button">5%</button>
+                <button id="btn10p" type="button" class="tips-button">
+                  10%
+                </button>
+                <button id="btn15p" type="button" class="tips-button">
+                  15%
+                </button>
+              </div>
+              <div>
+                <button id="btn25p" type="button" class="tips-button">
+                  25%
+                </button>
+                <button id="btn50p" type="button" class="tips-button">
+                  50%
+                </button>
+                <input
+                  type="text"
+                  name="customTip"
+                  id="customTip"
+                  placeholder="Custom"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="box01">
+            <div class="peopleHeaders">
+              <span class="description01">Number of People</span>
+              <span id="numPeopleMsg" class="validatePeople"
+                >Can't be zero</span
+              >
+            </div>
+
+            <div id="divNumPeople" class="input-data">
+              <img src="./images/icon-person.svg" alt="icon-person" />
+              <input
+                type="text"
+                name="numPeople"
+                id="numPeople"
+                placeholder="0"
+              />
+            </div>
+          </div>
+        </form>
+        <div class="results">
+          <div class="box02">
+            <div>
+              <div><span class="description02">Tip Amount</span></div>
+              <div><span class="description03">/ person</span></div>
+            </div>
+            <div>
+              <h1 id="tota1" class="totals">$0.00</h1>
+            </div>
+          </div>
+          <div class="box02">
+            <div>
+              <div><span class="description02">Total</span></div>
+              <div><span class="description03">/ person</span></div>
+            </div>
+            <div>
+              <h1 id="tota2" class="totals">$0.00</h1>
+            </div>
+          </div>
+          <div class="box03">
+            <button id="btnReset" class="reset-button">RESET</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
